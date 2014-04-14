@@ -105,6 +105,7 @@
 (require 'init-smartparens)
 (require 'init-company)
 (require 'init-yasnippet)
+(require 'init-evil)
 ;(require 'elnode) ;Untest package
 
 ;; Extra packages which don't require any configuration
