@@ -68,6 +68,7 @@
         (speedbar-mode . emacs)
         (magit-commit-mode . normal)
         (js2-error-buffer-mode . emacs)
+	(cscope-mode . normal)
         )
       do (evil-set-initial-state mode state))
 
