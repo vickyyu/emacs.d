@@ -10,10 +10,11 @@
 ;; {{@see http://stackoverflow.com/questions/19054228/emacs-disable-theme-background-color-in-terminal
 ;; Set background color to black (color-16) when no window system
 (defun set-no-window-frame-bg ()
-    (unless (display-graphic-p (selected-frame))
-	  (set-face-background 'default "color-16" (selected-frame))))
+    (when (display-graphic-p (selected-frame))
+      (set-face-background 'default "black" (selected-frame))
+      (set-background-color "black")))
 
-(unless window-system
+(when window-system
   (add-hook 'window-setup-hook 'set-no-window-frame-bg))
 ;; }}
 
