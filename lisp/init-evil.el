@@ -149,6 +149,7 @@
 (define-key minibuffer-local-map (kbd "M-k") 'abort-recursive-edit)
 (define-key evil-insert-state-map (kbd "M-j") 'my-yas-expand)
 (global-set-key (kbd "M-k") 'keyboard-quit)
+(define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-page-up)
 
 (define-key evil-insert-state-map [escape] 'evil-normal-state)
 (define-key evil-normal-state-map [escape] 'keyboard-quit)
