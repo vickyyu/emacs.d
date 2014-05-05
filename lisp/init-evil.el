@@ -132,6 +132,8 @@
 	    (evil-want-C-w-delete-in-state evil-normal-state-map)
 	    (evil-want-C-w-delete-in-state evil-visual-state-map)))
 
+(global-set-key (kbd "M-:") 'evil-ex)
+
 ;; Leave return (ENTER) key for local key-map
 ;; It is used for magit-log, cscope, etc. mode.
 (define-key evil-motion-state-map (kbd "RET") nil)
