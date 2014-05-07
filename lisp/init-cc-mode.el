@@ -20,7 +20,6 @@
                         (arglist-cont-nonempty
                          c-lineup-gcc-asm-reg
                          c-lineup-arglist-tabs-only))))
-	     (setq indent-tabs-mode t)
-	     (modify-syntax-entry ?_ "w" c-mode-syntax-table)))
+            (setq indent-tabs-mode t)))
 
 (provide 'init-cc-mode)
