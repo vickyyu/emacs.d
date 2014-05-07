@@ -139,6 +139,7 @@
 ;; It is used for magit-log, cscope, etc. mode.
 (define-key evil-motion-state-map (kbd "RET") nil)
 (define-key evil-insert-state-map (kbd "C-w") 'evil-window-map)
+(define-key evil-normal-state-map (kbd "C-w v") 'evil-window-vnew)
 (define-key evil-insert-state-map (kbd "M-a") 'move-beginning-of-line)
 (define-key evil-normal-state-map (kbd "C-e") 'move-end-of-line)
 (define-key evil-visual-state-map (kbd "C-e") 'move-end-of-line)
