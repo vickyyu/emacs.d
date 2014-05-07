@@ -69,6 +69,7 @@
         (magit-commit-mode . normal)
         (js2-error-buffer-mode . emacs)
 	(cscope-list-entry-mode . normal)
+        (fundamental-mode . normal)
         )
       do (evil-set-initial-state mode state))
 
