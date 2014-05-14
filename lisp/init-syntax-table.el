@@ -6,7 +6,8 @@
 
 (dolist (hook '(makefile-gmake-mode-hook
 		makefile-bsdmake-mode-hook
-		c-mode-common-hook))
+		c-mode-common-hook
+		conf-space-mode-hook))
   (add-hook hook
 	    (lambda () (modify-syntax-entry ?_ "w"))))
 
