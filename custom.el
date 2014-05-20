@@ -6,6 +6,7 @@
  '(evil-toggle-key "M-z")
  '(evil-want-C-w-delete nil)
  '(evil-want-C-w-in-emacs-state t)
+ '(evil-symbol-word-search t)
  '(init-color-theme-no-window-system-bg-color "color-16")
  '(init-color-theme-window-system-bg-color "black")
  '(session-use-package t nil (session))
