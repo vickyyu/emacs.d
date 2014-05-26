@@ -146,6 +146,8 @@
 (global-set-key (kbd "M-u") 'undo)
 (define-key evil-insert-state-map (kbd "C-w") 'evil-window-map)
 (define-key evil-normal-state-map (kbd "C-w v") 'evil-window-vnew)
+(define-key evil-normal-state-map (kbd "C-t") 'cscope-pop-mark)
+(define-key evil-insert-state-map (kbd "C-t") 'cscope-pop-mark)
 ;; Leave return (ENTER) key for local key-map
 ;; It is used for magit-log, cscope, etc. mode.
 (define-key evil-motion-state-map (kbd "RET") 'init-evil-undefine)
