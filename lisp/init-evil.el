@@ -167,7 +167,6 @@
 (define-key evil-insert-state-map (kbd "M-k") 'evil-normal-state)
 (define-key evil-visual-state-map (kbd "M-k") 'evil-exit-visual-state)
 (define-key minibuffer-local-map (kbd "M-k") 'abort-recursive-edit)
-(define-key evil-insert-state-map (kbd "M-j") 'my-yas-expand)
 (define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-page-up)
 
 (define-key evil-insert-state-map [escape] 'evil-normal-state)
