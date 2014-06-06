@@ -73,6 +73,7 @@
         (js2-error-buffer-mode . emacs)
         (fundamental-mode . normal)
 	(help-mode . normal)
+	(calculator-mode . emacs)
         )
       do (evil-set-initial-state mode state))
 
