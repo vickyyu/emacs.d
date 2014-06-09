@@ -144,8 +144,8 @@
     (call-interactively (key-binding (this-command-keys)))))
 
 ;; Prevent mis-trigger "eval" 
-(global-set-key (kbd "M-:") 'evil-ex)
-(global-set-key (kbd "M-u") 'undo)
+;; (global-set-key (kbd "M-:") 'evil-ex)
+;; (global-set-key (kbd "M-u") 'undo)
 (define-key evil-insert-state-map (kbd "C-w") 'evil-window-map)
 (define-key evil-normal-state-map (kbd "C-w v") 'evil-window-vnew)
 (define-key evil-normal-state-map (kbd "C-t") 'cscope-pop-mark)
