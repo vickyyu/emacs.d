@@ -170,7 +170,11 @@ Example: cs f s <symbol> ==> cscope fine symbol"
 	 (thing (car (cdr arg1))))
     (cond ((string= type "s") (cscope-find-this-symbol thing))
 	  ((string= type "t") (cscope-find-this-text-string thing))
-	  ((string= type "d") (cscope-find-global-definition thing)))))
+	  ((string= type "d") (cscope-find-global-definition thing))
+	  ((string= type "g") (cscope-find-global-definition thing))
+	  ((string= type "c") (cscope-find-functions-calling-this-function thing))
+	  ((string= type "C") (cscope-find-called-functions thing))
+	  ((string= type "g") (cscope-find-global-definition thing)))))
 
 (evil-ex-define-cmd "tlist" 'taglist)
 (evil-ex-define-cmd "cs[cope]" 'evil-cscope-find)
