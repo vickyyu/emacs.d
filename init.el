@@ -141,6 +141,7 @@
 (require 'init-ace-jump)
 (require 'init-key-chord)
 (require 'init-hideshow-org)
+(require 'init-octave)
 ;(require 'elnode) ;Untest package
 
 ;; Extra packages which don't require any configuration
