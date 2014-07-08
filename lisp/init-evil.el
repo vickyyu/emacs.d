@@ -74,6 +74,7 @@
         (fundamental-mode . normal)
 	(help-mode . normal)
 	(calculator-mode . emacs)
+	(inferior-octave-mode . emacs)
         )
       do (evil-set-initial-state mode state))
 
