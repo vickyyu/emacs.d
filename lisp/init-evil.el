@@ -158,7 +158,7 @@
 (define-key minibuffer-local-isearch-map [escape] 'minibuffer-keyboard-quit)
 
 (global-set-key (kbd "M-k") 'keyboard-quit)
-(global-set-key (kbd "C-o") 'evil-execute-in-normal-state)
+;; (global-set-key (kbd "C-o") 'evil-execute-in-normal-state) ;; C-o is used for open new line
 
 
 ;;; ex-command with argument
