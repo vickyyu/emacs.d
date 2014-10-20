@@ -33,6 +33,11 @@
 
 
 ;;----------------------------------------------------------------------------
+;; Allow users to provide an optional "init-preload-local.el"
+;;----------------------------------------------------------------------------
+(require 'init-preload-local nil t)
+
+;;----------------------------------------------------------------------------
 ;; Load configs for specific features and modes
 ;;----------------------------------------------------------------------------
 
@@ -43,7 +48,8 @@
 (require-package 'mwe-log-commands)
 
 (require 'init-frame-hooks)
-(require 'init-xterm)
+(when window-system
+  (require 'init-xterm))
 ;(require 'init-themes) ;Can not understand the settings now
 (when *is-a-mac*
   (require 'init-osx-keys))
@@ -70,6 +76,7 @@
 (require 'init-vc)
 (require 'init-darcs)
 (require 'init-git)
+(require 'init-github)
 
 (require 'init-crontab)
 (require 'init-textile)
@@ -111,6 +118,7 @@
 ;; Additonal packages exclude with purcell init setting
 ;; Most settings are ported by https://github.com/redguardtoo/emacs.d
 (require 'init-color-theme)
+(require 'init-sr-speedbar)
 (require 'init-term-mode)
 (require 'init-cc-mode)
 (require 'init-xcscope)
@@ -125,7 +133,6 @@
 ;(require 'init-ctags) ;Enable if necessary
 (require 'init-buffer-move)
 (require 'init-web-mode)
-(require 'init-sr-speedbar)
 (require 'init-smartparens)
 ;; (require 'init-company)
 (require 'init-yasnippet)
@@ -142,7 +149,6 @@
 (require 'init-key-chord)
 (require 'init-hideshow-org)
 (require 'init-octave)
-(require 'init-mouse)
 ;(require 'elnode) ;Untest package
 
 ;; Extra packages which don't require any configuration

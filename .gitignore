@@ -30,3 +30,4 @@ site-lisp/package/
 /emms/
 /.smex-items
 /image-dired/
+/eshell
