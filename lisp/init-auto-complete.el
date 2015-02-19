@@ -33,7 +33,7 @@
   (if (yas/expansion-at-point)
       (progn (ac-abort)
              (yas/expand))
-    (auto-complete)))
+    #'auto-complete))
 
 (defun yas/expansion-at-point ()
   "Tested with yasnippet-20140821.38"
