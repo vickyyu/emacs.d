@@ -3,8 +3,8 @@
 (require-package 'magit)
 (require-package 'mo-git-blame)
 (require-package 'git-blame)
-(require-package 'git-commit-mode)
-(require-package 'git-rebase-mode)
+(require-package 'git-commit)
+(require-package 'git-rebase)
 (require-package 'gitignore-mode)
 (require-package 'gitconfig-mode)
 (require-package 'git-messenger) ;; Though see also vc-annotate's "n" & "p" bindings
@@ -28,9 +28,6 @@
   (fullframe magit-status magit-mode-quit-window))
 
 (add-hook 'git-commit-mode-hook 'goto-address-mode)
-(after-load 'session
-  (when (boundp 'session-mode-disable-list) ; newer Emacsen
-    (add-to-list 'session-mode-disable-list 'git-commit-mode)))
 
 
 ;;; When we start working on git-backed files, use git-wip if available
