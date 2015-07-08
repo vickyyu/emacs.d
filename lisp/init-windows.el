@@ -79,10 +79,6 @@ Call a second time to restore the original window configuration."
     (switch-to-buffer-other-window nil)))
 
 (global-set-key (kbd "<f7>") 'sanityinc/split-window)
-(global-set-key (kbd "<f6>")
-                (lambda ()
-                  (interactive)
-                  (switch-to-buffer nil)))
 
 ;; Move to window with C-x + arrow key (windmove.el)
 (global-set-key (kbd "C-x <up>") 'windmove-up)
