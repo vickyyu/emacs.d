@@ -90,4 +90,8 @@ Call a second time to restore the original window configuration."
 (global-set-key (kbd "C-c C-<left>") 'previous-buffer)
 (global-set-key (kbd "C-c C-<right>") 'next-buffer)
 
+
+(windmove-default-keybindings 'control)
+
+
 (provide 'init-windows)
