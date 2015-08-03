@@ -385,4 +385,21 @@ With arg N, insert N newlines."
   (setq buffer-display-table (make-display-table))
   (aset buffer-display-table ?\^M []))
 
+
+(defun count-words-region (posBegin posEnd)
+  "Print number of words and chars in region."
+  (interactive "r")
+  (message "Counting …")
+  (save-excursion
+    (let (wordCount charCount)
+      (setq wordCount 0)
+      (setq charCount (- posEnd posBegin))
+      (goto-char posBegin)
+      (while (and (< (point) posEnd)
+		  (re-search-forward "\\w+\\W*" posEnd t))
+	(setq wordCount (1+ wordCount)))
+
+      (message "Words: %d. Chars: %d." wordCount charCount)
+      )))
+
 (provide 'init-editing-utils)
