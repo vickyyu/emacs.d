@@ -36,8 +36,8 @@
     (auto-complete)))
 
 (defun yas/expansion-at-point ()
-  "Tested with yasnippet-20140514.1649"
-  (first (yas--current-key)))
+  "Tested with yasnippet-20140821.38"
+  (first (yas--templates-for-key-at-point)))
 
 (defun sanityinc/never-indent ()
   (set (make-local-variable 'indent-line-function) (lambda () 'noindent)))
