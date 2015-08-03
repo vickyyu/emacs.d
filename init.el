@@ -151,6 +151,7 @@
 (require 'init-hideshow-org)
 (require 'init-octave)
 (require 'init-jedi)
+(require 'init-which-func)
 ;(require 'elnode) ;Untest package
 
 ;; Extra packages which don't require any configuration
