@@ -8,6 +8,21 @@
 ;; Enable which function mode which supported
 (which-function-mode)
 
+(custom-set-variables
+ '(which-func-modes
+   '(emacs-lisp-mode
+     c-mode
+     c++-mode
+     objc-mode
+     perl-mode
+     cperl-mode
+     python-mode
+     makefile-mode
+     sh-mode
+     fortran-mode f90-mode
+     ada-mode
+     diff-mode)))
+
 ;; string that shows when not in function
 (setq which-func-unknown "n/a")
 
