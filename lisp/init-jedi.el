@@ -21,5 +21,13 @@
 ;;     M-x jedi:install-server RET
 ;; Then open Python file.
 
+;; Tree style source code viewer for Python buffer
+(require-package 'direx)
+(require-package 'jedi-direx)
+
+(eval-after-load "python"
+  '(define-key python-mode-map "\C-cx" 'jedi-direx:pop-to-buffer))
+(add-hook 'jedi-mode-hook 'jedi-direx:setup)
+
 (provide 'init-jedi)
 ;;; init-jedi.el ends here
