@@ -152,6 +152,8 @@
 (require 'init-octave)
 (require 'init-jedi)
 (require 'init-which-func)
+(when (executable-find "xclip")
+  (require 'init-xclip))
 ;(require 'elnode) ;Untest package
 
 ;; Extra packages which don't require any configuration
