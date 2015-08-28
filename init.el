@@ -151,6 +151,7 @@
 (require 'init-key-chord)
 (require 'init-hideshow-org)
 (require 'init-octave)
+(require 'init-docker)
 (require 'init-jedi)
 (require 'init-which-func)
 (when (executable-find "xclip")
