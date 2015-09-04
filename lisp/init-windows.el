@@ -21,7 +21,9 @@
     (lambda ()
       (interactive)
       (funcall s-f)
-      (set-window-buffer (next-window) (other-buffer)))))
+      (let ((target-window (next-window)))
+        (set-window-buffer target-window (other-buffer))
+        (select-window target-window)))))
 
 (defun split-window-func-with-new-buffer (split-function)
     (lexical-let ((s-f split-function))
