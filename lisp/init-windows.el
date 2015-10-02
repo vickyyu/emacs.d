@@ -94,7 +94,7 @@ Call a second time to restore the original window configuration."
 (global-set-key (kbd "C-c C-<right>") 'next-buffer)
 
 
-(unless (memq window-system '(nt w32))
+(unless (memq window-system '(nt w32 nil))
   (windmove-default-keybindings 'control))
 
 
