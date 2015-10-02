@@ -33,7 +33,7 @@
   (if (yas/expansion-at-point)
       (progn (ac-abort)
              (yas/expand))
-    (auto-complete)))
+    #'auto-complete))
 
 (defun yas/expansion-at-point ()
   "Tested with yasnippet-20140821.38"
@@ -66,8 +66,7 @@
                ac-source-words-in-all-buffer
 	       ac-source-yasnippet))
 
-(dolist (mode '(magit-log-edit-mode
-                log-edit-mode org-mode text-mode haml-mode
+(dolist (mode '(log-edit-mode org-mode text-mode haml-mode
                 git-commit-mode
                 sass-mode yaml-mode csv-mode espresso-mode haskell-mode
                 html-mode nxml-mode sh-mode smarty-mode clojure-mode

@@ -7,5 +7,7 @@
 		("SConscript\\'" . python-mode))
               auto-mode-alist))
 
+(require-package 'pip-requirements)
+
 
 (provide 'init-python-mode)

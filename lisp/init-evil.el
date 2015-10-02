@@ -6,10 +6,10 @@
 (evil-mode 1)
 
 ;; {{@see https://github.com/timcharper/evil-surround
-(require-package 'surround)
-(require 'surround)
+(require-package 'evil-surround)
+(require 'evil-surround)
 
-(global-surround-mode 1)
+(global-evil-surround-mode 1)
 ;; }}
 
 ;; {{@see http://dnquark.com/blog/2012/02/emacs-evil-ecumenicalism/
