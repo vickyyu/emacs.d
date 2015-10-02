@@ -2,9 +2,9 @@
 ;;; Commentary:
 ;;; Code:
 (require-package 'color-theme)
-(require-package 'color-theme-molokai)
 
 (require 'color-theme)
+(require 'color-theme-molokai)
 (color-theme-molokai)
 
 ;; {{ Set background color
