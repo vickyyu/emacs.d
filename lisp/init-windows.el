@@ -89,10 +89,6 @@ Call a second time to restore the original window configuration."
 (global-set-key (kbd "C-x <right>") 'windmove-right)
 (global-set-key (kbd "C-x <left>") 'windmove-left)
 
-;; Switch buffer with C-c + C-arrow key (window.el)
-(global-set-key (kbd "C-c C-<left>") 'previous-buffer)
-(global-set-key (kbd "C-c C-<right>") 'next-buffer)
-
 
 (unless (memq window-system '(nt w32 nil))
   (windmove-default-keybindings 'control))
