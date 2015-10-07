@@ -158,6 +158,9 @@
   (require 'init-xclip))
 ;(require 'elnode) ;Untest package
 
+; Custom configuration
+(require 'init-custom)
+
 ;; Extra packages which don't require any configuration
 
 (require-package 'gnuplot)
