@@ -42,6 +42,9 @@
     (cscope-call "Finding text string:" 4 symbol)
     ))
 
+(define-key cscope-list-entry-keymap [return] 'cscope-select-entry-one-window)
+(define-key cscope-list-entry-keymap "\r" 'cscope-select-entry-one-window)
+
 (define-key global-map "\C-\\" nil)
 (global-set-key (kbd "C-\\ s") 'cscope-find-this-symbol-no-prompting)
 (global-set-key (kbd "C-\\ g") 'cscope-find-global-definition-no-prompting)
