@@ -129,6 +129,7 @@
 (when (executable-find "w3m")
   (require 'init-emacs-w3m))
 
+(require 'init-eexpect)
 (require 'init-gtags)
 ;(require 'init-ctags) ;Enable if necessary
 (require 'init-buffer-move)
