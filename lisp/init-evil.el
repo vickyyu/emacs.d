@@ -220,7 +220,7 @@ to replace the symbol under cursor"
   "fe" 'end-of-defun
   "fm" 'mark-defun
   "gdbf" '(lambda ()(interactive) (gud-gdb (concat "gdb --fullname " (cppcm-get-exe-path-current-buffer))))
-  "gl" 'magit-log
+  "gl" 'magit-log-current
   "gst" 'magit-status
   "h2d" 'math-utils-hex2dec
   "hf" 'find-function
