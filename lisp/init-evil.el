@@ -57,6 +57,7 @@
         (eshell-mode . emacs)
         (shell-mode . emacs)
         ;;(message-mode . emacs)
+        (text-mode . insert)
         (magit-log-edit-mode . emacs)
         (fundamental-mode . normal)
         (gtags-select-mode . emacs)
