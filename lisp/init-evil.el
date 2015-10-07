@@ -81,14 +81,11 @@
         )
       do (evil-set-initial-state mode state))
 
-;; When Evil initiailizing (evil-initialize-state), 'evil-change-to-initial-state'
-;; will be called. But some modes still need to call 'evil-change-to-initial-state'
-;; when hooking to mode
-(loop for (hook) in
-      '(
-;;	(cscope-list-entry-hook)
-	)
-      do (add-hook hook 'evil-change-to-initial-state))
+;; @see https://bitbucket.org/lyro/evil/issue/511/let-certain-minor-modes-key-bindings
+(evil-make-overriding-map cscope-list-entry-keymap 'normal)
+(eval-after-load 'magit-blame
+  '(progn
+     (evil-make-overriding-map magit-blame-mode-map 'normal)))
 
 (define-key evil-ex-completion-map (kbd "M-p") 'previous-complete-history-element)
 (define-key evil-ex-completion-map (kbd "M-n") 'next-complete-history-element)
