@@ -1,3 +1,6 @@
+;; The evil configuration is inspired from a great one named Chen Bin
+;; @see https://github.com/redguardtoo/emacs.d
+
 ;; load undo-tree and ert
 (require-package 'evil)
 (require 'evil)
