@@ -7,11 +7,14 @@
 
 (key-chord-mode 1)
 
-(key-chord-define-global "jj" 'ace-jump-char-mode)
-(key-chord-define-global "j'" 'ace-jump-mode-pop-mark)
+(when (maybe-require-package 'avy)
+  (autoload 'avy-goto-word-or-subword-1 "avy")
+  (key-chord-define-global "jj" 'avy-goto-word-or-subword-1)
+  (key-chord-define-global "j'" 'avy-pop-mark))
 
-(when (boundp 'evil-insert-state-map)
-  (key-chord-define-global ",," 'evil-execute-in-normal-state))
+(when (maybe-require-package 'evil)
+  (when (boundp 'evil-insert-state-map)
+    (key-chord-define-global ",," 'evil-execute-in-normal-state)))
 
 (provide 'init-key-chord)
 ;;; init-key-chord.el ends here
