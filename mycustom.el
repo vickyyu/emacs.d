@@ -17,6 +17,7 @@
  '(evil-want-C-w-delete t)
  '(evil-want-C-w-in-emacs-state nil)
  '(evil-want-visual-char-semi-exclusive t)
+ '(grep-command "grep -nrH -e")
  '(init-color-theme-no-window-system-bg-color "#000000")
  '(init-color-theme-window-system-bg-color "black")
  '(session-use-package t nil (session))
