@@ -148,7 +148,6 @@
 (require 'init-syntax-table)
 (require 'init-tag-list)
 (require 'init-math-utils)
-(require 'init-ace-jump)
 (require 'init-key-chord)
 (require 'init-hideshow-org)
 (require 'init-octave)
