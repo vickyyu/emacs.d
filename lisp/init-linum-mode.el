@@ -1,7 +1,7 @@
 ;;; Package --- Show line number
 
 ;; {{ see@http://stackoverflow.com/questions/5229705/emacs-org-mode-turn-off-line-numbers
-(require 'linum-off)
+(require-package 'linum-off)
 ;; }}
 
 (global-linum-mode t)
