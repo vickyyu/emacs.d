@@ -17,9 +17,6 @@
  '(evil-want-C-w-delete t)
  '(evil-want-C-w-in-emacs-state nil)
  '(evil-want-visual-char-semi-exclusive t)
- '(git-commit-setup-hook
-   (quote
-    (magit-revert-buffers git-commit-save-message git-commit-setup-changelog-support git-commit-turn-on-auto-fill git-commit-turn-on-flyspell git-commit-propertize-diff with-editor-usage-message)))
  '(grep-command "grep -nrH -e")
  '(init-color-theme-no-window-system-bg-color "#000000")
  '(init-color-theme-window-system-bg-color "black")
