@@ -156,6 +156,10 @@
 (require 'init-which-func)
 (when (executable-find "xclip")
   (require 'init-xclip))
+
+;; The init-session.el has set savehist-mode 1
+;; When enabled init-session.el, you can disable init-savehist.el
+(require 'init-savehist)
 ;(require 'elnode) ;Untest package
 
 ; Custom configuration
